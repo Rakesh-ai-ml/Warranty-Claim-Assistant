@@ -1,0 +1,225 @@
+intake_task:
+  description: >
+    Customer information has already been provided.
+
+    INPUTS:
+    - email: {email}
+    - phone: {phone}
+    - serial_number: {serial_number}
+    - product_name: {product_name}
+    - issue_description: {description}
+    - image_path: {image_path}
+
+    You MUST perform the following actions:
+
+    1. Call FindCustomerTool using the provided email.
+
+    2. If serial_number is not empty,
+       call VerifySerialTool using the serial number.
+
+    3. If serial_number is empty and customer exists,
+       call CustomerPurchasesTool using the email.
+
+    4. Do NOT ask the user for information that already
+       exists in the INPUTS above.
+
+    5. Do NOT make up customer information.
+
+    6. Generate a ticket id in the format:
+       TKT-random_4_digits
+
+    7. Create an issue summary in one sentence.
+
+    You must use the tool results when generating the output.
+
+  expected_output: >
+    {
+      "ticket_id":"",
+      "order_id" : ""
+      "customer_id": "",
+      "customer_name":"",
+      "email":"",
+      "phone":"",
+      "product_name":"",
+      "serial_number":"",
+      "issue_summary":"",
+      
+    }
+
+  agent: intake_agent
+
+
+
+validation_task:
+  description: >
+    Validate that the product belongs to the customer.
+    
+    Use VerifySerialTool to verify the serial number.
+    
+    Use WarrantyStatusTool to determine if the warranty
+    period is still active.
+
+    You MUST call OrderDeliveryTool using the returned
+    order_id.
+
+    If a serial number is unavailable, indicate that
+    further customer confirmation is required.
+
+  expected_output: >
+    {
+      "serial_number":"",
+      "product_name":"",
+      "order_id":"",
+      "order_status":"",
+      "purchase_date":"",
+      "warranty_expiry_date":"",
+      "warranty_active":true,
+      "validation_result":""
+    }
+
+  agent: validation_agent
+
+  context:
+    - intake_task
+
+
+damage_inspection_task:
+
+  description: >
+    Inspect the uploaded image.
+
+    Image Path:
+    {image_path}
+
+    Use DamageInspectionTool.
+
+    Determine whether visible product damage exists.
+
+    Physical damage includes:
+    - cracks
+    - broken cable
+    - dents
+    - severe scratches
+    - burns
+    - missing parts
+
+    If damage is clearly visible:
+
+    damage_detected=true
+    inspection_decision=fail
+
+    Otherwise:
+
+    damage_detected=false
+    inspection_decision=pass
+
+  expected_output: >
+    {
+      "damage_detected": false,
+      "damage_type": "",
+      "confidence": 0.95,
+      "inspection_decision": "pass"
+    }
+  agent: damage_inspection_agent
+  context:
+    - validation_task
+
+
+claim_task:
+  description: >
+    If:
+    - warranty_active = true
+    - order_status = delivered
+    - damage_detected = false
+
+    create claim.
+
+    If:
+    damage_detected = true
+
+    reject claim.
+
+    Use damage_inspection_task results.
+
+    Do not create a claim when inspection
+    indicates physical damage.
+
+  expected_output: >
+    {
+      "claim_created":true,
+      "claim_id":"",
+      "claim_status":"",
+      "eligibility":"eligible|not_eligible",
+      "reason":"",
+      "previous_claims":[]
+    }
+
+  agent: claim_agent
+
+  context:
+    - validation_task
+
+
+
+
+resolution_task:
+  description: >
+    Based on the validation results and claim status,
+    determine the appropriate next action.
+
+    If a claim was successfully created:
+    recommend claim processing.
+
+    If warranty is expired:
+    explain that the product is outside the warranty period.
+
+    If additional information is required:
+    describe what information is needed.
+
+    Prepare a draft response for the customer.
+
+  expected_output: >
+    {
+      "resolution_type":"",
+      "resolution_details":"",
+      "draft_message":""
+    }
+
+  agent: resolution_agent
+
+  context:
+    - claim_task
+
+
+
+communication_task:
+  description: >
+    Convert the draft response into a professional
+    customer-facing message.
+
+    Include:
+    - Customer name
+    - Ticket ID
+    - Product name
+    - Warranty status
+    - Claim ID (if created)
+    - Next steps
+
+    Ensure the message is concise,
+    empathetic and easy to understand.
+
+  expected_output: >
+    {
+      "ticket_id":"",
+      "claim_id":"",
+      "final_message":"",
+      "communication_status":"generated"
+    }
+
+  agent: communication_agent
+
+  context:
+    - intake_task
+    - validation_task
+    - claim_task
+    - resolution_task

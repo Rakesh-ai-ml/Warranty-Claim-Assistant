@@ -1,0 +1,51 @@
+product_id,sku,product_name,category,warranty_months,warranty_type
+1,SON-TWS-1007,Sony WF-1000XM5,True Wireless Earbuds,12,limited
+2,SAM-TWS-1014,Samsung Galaxy Buds2 Pro,True Wireless Earbuds,12,limited
+3,JBL-TWS-1021,JBL Tune 230NC TWS,True Wireless Earbuds,12,limited
+4,ANK-TWS-1028,Anker Soundcore Liberty 4 NC,True Wireless Earbuds,6,limited
+5,SEN-TWS-1035,Sennheiser Momentum True Wireless 4,True Wireless Earbuds,24,extended
+6,JAB-TWS-1042,Jabra Elite 8 Active,True Wireless Earbuds,12,limited
+7,BEA-TWS-1049,Beats Studio Buds +,True Wireless Earbuds,12,limited
+8,SKU-TWS-1056,Skullcandy Dime 3,True Wireless Earbuds,12,limited
+9,ONE-TWS-1063,OnePlus Buds Pro 2,True Wireless Earbuds,12,limited
+10,XIA-TWS-1070,Xiaomi Redmi Buds 5 Pro,True Wireless Earbuds,12,limited
+11,BOA-TWS-1077,boAt Airdopes 141,True Wireless Earbuds,12,limited
+12,REA-TWS-1084,Realme Buds Air 5 Pro,True Wireless Earbuds,12,limited
+13,BOS-TWS-1091,Bose QuietComfort Earbuds II,True Wireless Earbuds,12,limited
+14,NOT-TWS-1098,Nothing Ear (2),True Wireless Earbuds,6,limited
+15,NOI-TWS-1105,Noise Buds VS102,True Wireless Earbuds,24,extended
+16,JAB-ANC-1112,Jabra Elite 10 ANC,Noise-Cancelling Earbuds,12,limited
+17,BOS-ANC-1119,Bose QuietComfort Ultra Earbuds,Noise-Cancelling Earbuds,24,extended
+18,JBL-SPT-1126,JBL Endurance Peak 3,Sports Earbuds,12,limited
+19,JAB-SPT-1133,Jabra Elite 4 Active,Sports Earbuds,12,limited
+20,SON-SPT-1140,Sony WF-SP800N,Sports Earbuds,12,limited
+21,BEA-SPT-1147,Beats Powerbeats Pro 2,Sports Earbuds,12,limited
+22,ANK-SPT-1154,Anker Soundcore Sport X20,Sports Earbuds,12,limited
+23,SAM-SPT-1161,Samsung Galaxy Buds FE Sport,Sports Earbuds,12,limited
+24,SKU-SPT-1168,Skullcandy Dime Sport,Sports Earbuds,12,limited
+25,BOA-NKB-1175,boAt Rockerz 255 Pro+ Neckband,Wireless Neckband Earphones,12,limited
+26,JBL-NKB-1182,JBL Tune 215BT Wireless Neckband,Wireless Neckband Earphones,12,limited
+27,SON-NKB-1189,Sony WI-C200 Wireless Neck Earphones,Wireless Neckband Earphones,12,limited
+28,SAM-NKB-1196,Samsung Galaxy EO-BG920 Bluetooth Neck Earphones,Wireless Neckband Earphones,6,limited
+29,ANK-NKB-1203,Anker Soundcore Ace A10i Neckband,Wireless Neckband Earphones,6,limited
+30,ONE-NKB-1210,OnePlus Bullets Wireless Z2 Neckband,Wireless Neckband Earphones,12,limited
+31,XIA-NKB-1217,Xiaomi Redmi Neckband Bluetooth Earphones 2,Wireless Neckband Earphones,12,limited
+32,REA-NKB-1224,Realme Buds Wireless 3 Neckband,Wireless Neckband Earphones,12,limited
+33,PHI-NKB-1231,Philips TAA3206 Bluetooth Neckband,Wireless Neckband Earphones,12,limited
+34,NOI-NKB-1238,Noise Tag Pro Neckband Earphones,Wireless Neckband Earphones,12,limited
+35,SON-WRD-1245,Sony MDR-EX15AP,Wired Earphones,6,limited
+36,SAM-WRD-1252,Samsung EO-IC100 USB-C,Wired Earphones,0,none
+37,JBL-WRD-1259,JBL Tune 110 3.5mm,Wired Earphones,12,limited
+38,ANK-WRD-1266,Anker Soundcore Lite Wired,Wired Earphones,12,limited
+39,SEN-WRD-1273,Sennheiser IE 40 PRO,Wired Earphones,0,none
+40,JAB-WRD-1280,Jabra Eclipse Wired,Wired Earphones,6,limited
+41,BEA-WRD-1287,Beats Flex Lightning,Wired Earphones,12,limited
+42,SKU-WRD-1294,Skullcandy Jib Wired,Wired Earphones,0,none
+43,ONE-WRD-1301,OnePlus Bullets Wireless Z USB-C,Wired Earphones,12,limited
+44,XIA-WRD-1308,Xiaomi Mi Dual Driver Earphones,Wired Earphones,12,limited
+45,SON-ANC-1315,Sony WF-1000XM4,Noise-Cancelling Earbuds,12,limited
+46,BOS-ANC-1322,Bose QuietComfort Earbuds II Pro,Noise-Cancelling Earbuds,12,limited
+47,APP-ANC-1329,Apple AirPods Pro 2nd Generation,Noise-Cancelling Earbuds,24,extended
+48,SAM-ANC-1336,Samsung Galaxy Buds3 Pro,Noise-Cancelling Earbuds,12,limited
+49,SEN-ANC-1343,Sennheiser Momentum True Wireless 3,Noise-Cancelling Earbuds,24,extended
+50,JAB-ANC-1350,Jabra Elite 7 Pro,Noise-Cancelling Earbuds,24,extended

@@ -1,0 +1,41 @@
+claim_id,order_item_id,claim_date,issue_description,status,returned,resolution,closed_at
+1,3,2024-01-26,Left ear unit has no audio. Tested with a second phone and got the same result.,cancelled,False,customer_cancelled,2024-02-04T03:02:53Z
+2,26,2024-11-15,Bluetooth keeps disconnecting every few minutes. It happens every day.,delivered,True,repaired,2024-11-27T10:52:30Z
+3,43,2025-01-11,Remote buttons are unresponsive. It happens every day.,delivered,True,replaced,2025-01-28T20:32:35Z
+4,55,2025-02-15,Earbuds no longer pair with my phone. It worked fine for the first few weeks.,cancelled,False,customer_cancelled,2025-02-26T11:00:33Z
+5,49,2025-02-25,Right channel has no sound. It worked fine for the first few weeks.,cancelled,False,customer_cancelled,2025-02-28T08:54:12Z
+6,54,2025-03-24,Charging port is loose and the band loses power. It happens every day.,cancelled,False,customer_cancelled,2025-03-29T23:44:30Z
+7,31,2025-06-08,Volume buttons are stuck.,delivered,True,rejected_out_of_warranty,2025-06-22T21:59:46Z
+8,97,2025-09-29,Left ear unit has no audio.,delivered,True,replaced,2025-10-13T09:18:18Z
+9,108,2025-10-09,Bluetooth keeps disconnecting every few minutes. It happens every day.,delivered,True,repaired,2025-10-27T02:41:35Z
+10,143,2025-10-30,Neckband battery lasts under an hour. It happens every day.,cancelled,True,refund_issued,2025-11-01T18:26:34Z
+11,93,2025-11-07,Crackling noise in the left ear at medium volume. It worked fine for the first few weeks.,delivered,True,replaced,2025-11-26T03:26:45Z
+12,106,2025-12-14,Ear hook snapped off the left earbud.,cancelled,True,refund_issued,2025-12-21T14:22:51Z
+13,125,2026-01-04,Bluetooth keeps disconnecting every few minutes.,delivered,True,no_fault_found,2026-01-23T00:31:29Z
+14,131,2026-04-09,Left ear unit has no audio. It worked fine for the first few weeks.,delivered,True,repaired,2026-05-03T11:42:44Z
+15,100,2026-05-04,Bluetooth keeps disconnecting every few minutes. Tested with a second phone and got the same result.,cancelled,False,customer_cancelled,2026-05-18T16:23:27Z
+16,218,2026-05-17,Remote buttons are unresponsive. I tried resetting the device and nothing changed.,cancelled,False,refund_issued,2026-05-27T08:44:11Z
+17,394,2026-10-01,Sweat got in and the right earbud now plays audio intermittently. Tested with a second phone and got the same result.,shipped,True,replaced,
+18,399,2026-10-01,Volume buttons are stuck. It happens every day.,shipped,True,repaired,
+19,214,2026-10-02,Cable is fraying near the connector. I tried resetting the device and nothing changed.,shipped,True,repaired,
+20,221,2026-10-05,Noise cancellation produces a loud hissing sound. I tried resetting the device and nothing changed.,shipped,True,repaired,
+21,203,2026-10-06,Remote buttons are unresponsive. It worked fine for the first few weeks.,processing,True,,
+22,382,2026-10-07,Volume buttons are stuck. It worked fine for the first few weeks.,shipped,True,replaced,
+23,159,2026-10-07,Charging case LED blinks red and will not charge.,shipped,True,replaced,
+24,410,2026-10-09,Bluetooth keeps disconnecting every few minutes. It worked fine for the first few weeks.,processing,False,,
+25,156,2026-10-10,Battery drains within 45 minutes of playback.,processing,True,,
+26,388,2026-10-11,Remote buttons are unresponsive. It worked fine for the first few weeks.,processing,False,,
+27,328,2026-10-12,Ambient mode cuts out randomly during calls.,processing,False,,
+28,305,2026-10-12,Audio cuts in and out when the cable moves.,shipped,True,repaired,
+29,269,2026-10-13,Crackling noise in the left ear at medium volume. It happens every day.,processing,True,,
+30,170,2026-10-13,Earbud falls out of the charging case slot and does not charge. It worked fine for the first few weeks.,shipped,True,replaced,
+31,177,2026-10-15,Constant vibration from the neckband motor. Tested with a second phone and got the same result.,processing,True,,
+32,284,2026-10-16,Crackling noise in the left ear at medium volume.,pending,False,,
+33,219,2026-10-17,Left earbud stopped charging in the case.,pending,True,,
+34,421,2026-10-18,Audio cuts in and out when the cable moves. It happens every day.,processing,True,,
+35,333,2026-10-18,Right channel has no sound. Tested with a second phone and got the same result.,pending,True,,
+36,346,2026-10-19,Earbuds no longer pair with my phone. It worked fine for the first few weeks.,pending,False,,
+37,181,2026-10-19,Crackling noise in the left ear at medium volume. It worked fine for the first few weeks.,pending,False,,
+38,164,2026-10-21,Earbuds no longer pair with my phone. It worked fine for the first few weeks.,pending,False,,
+39,244,2026-10-21,Ambient mode cuts out randomly during calls.,pending,False,,
+40,311,2026-10-22,Left earbud stopped charging in the case.,pending,True,,
